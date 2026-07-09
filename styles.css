@@ -179,23 +179,40 @@
   }
 }
 
-
-
 /* ==========================================================
-   Roblox Video Gallery
+   Roblox Video Carousel
    ========================================================== */
 
 .video-grid{
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
+  display:flex;
   gap:22px;
   margin-top:36px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  padding:4px 4px 24px;
+  -webkit-overflow-scrolling:touch;
+}
+
+.video-grid::-webkit-scrollbar{
+  height:10px;
+}
+
+.video-grid::-webkit-scrollbar-track{
+  background:rgba(255,255,255,.08);
+  border-radius:999px;
+}
+
+.video-grid::-webkit-scrollbar-thumb{
+  background:linear-gradient(90deg,var(--orange),var(--blue));
+  border-radius:999px;
 }
 
 .video-card{
+  flex:0 0 min(860px,86vw);
+  scroll-snap-align:center;
   background:rgba(255,255,255,.075);
   border:1px solid var(--line);
-  border-radius:28px;
+  border-radius:32px;
   overflow:hidden;
   box-shadow:var(--shadow);
 }
@@ -209,19 +226,41 @@
 
 .video-card h3{
   margin:0;
-  padding:20px 22px 10px;
+  padding:24px 28px 10px;
   font-family:"Space Grotesk",Inter,sans-serif;
+  font-size:1.45rem;
 }
 
 .video-card p{
   margin:0;
-  padding:0 22px 22px;
+  padding:0 28px 28px;
   color:var(--muted);
-  line-height:1.6;
+  line-height:1.65;
 }
 
 @media(max-width:900px){
+  .video-card{
+    flex-basis:88vw;
+    border-radius:26px;
+  }
+}
+
+@media(max-width:540px){
   .video-grid{
-    grid-template-columns:1fr;
+    gap:16px;
+    padding-bottom:20px;
+  }
+
+  .video-card{
+    flex-basis:92vw;
+  }
+
+  .video-card h3{
+    font-size:1.2rem;
+    padding:18px 20px 8px;
+  }
+
+  .video-card p{
+    padding:0 20px 22px;
   }
 }
