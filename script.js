@@ -1,6 +1,26 @@
-document.getElementById('year').textContent = new Date().getFullYear();
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
-},{threshold:.12});
-reveals.forEach(el=>observer.observe(el));
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.getElementById("lightboxClose");
+
+document.querySelectorAll(".case-gallery img, .card-sheet-grid img, .project-card img, .feature-card img").forEach((img) => {
+  img.addEventListener("click", () => {
+    if (!lightbox || !lightboxImage) return;
+    lightboxImage.src = img.src;
+    lightboxImage.alt = img.alt;
+    lightbox.classList.add("open");
+  });
+});
+
+if (lightboxClose) {
+  lightboxClose.addEventListener("click", () => {
+    lightbox.classList.remove("open");
+  });
+}
+
+if (lightbox) {
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      lightbox.classList.remove("open");
+    }
+  });
+}
