@@ -178,3 +178,50 @@
     max-height: 520px;
   }
 }
+
+
+
+/* ==========================================================
+   Roblox Video Gallery
+   ========================================================== */
+
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+  margin-top:36px;
+}
+
+.video-card{
+  background:rgba(255,255,255,.075);
+  border:1px solid var(--line);
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.video-card iframe{
+  width:100%;
+  aspect-ratio:16/9;
+  display:block;
+  border:0;
+}
+
+.video-card h3{
+  margin:0;
+  padding:20px 22px 10px;
+  font-family:"Space Grotesk",Inter,sans-serif;
+}
+
+.video-card p{
+  margin:0;
+  padding:0 22px 22px;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+@media(max-width:900px){
+  .video-grid{
+    grid-template-columns:1fr;
+  }
+}
