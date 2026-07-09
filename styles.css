@@ -516,3 +516,43 @@ footer {
   border-radius: 999px;
   background: linear-gradient(90deg, var(--green), var(--blue));
 }
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.86);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 24px;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: min(1100px, 94vw);
+  max-height: 86vh;
+  border-radius: 18px;
+  box-shadow: 0 30px 90px rgba(0,0,0,0.75);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 22px;
+  right: 26px;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.case-gallery img,
+.card-sheet-grid img,
+.project-card img,
+.feature-card img,
+.pokemon-card img {
+  cursor: zoom-in;
+}
