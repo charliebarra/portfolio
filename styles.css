@@ -180,32 +180,10 @@
 }
 
 
-/* ==========================================================
-   Programming / IT Labs Page
-   ========================================================== */
 
-.lab-hero {
-  width: min(1180px, calc(100% - 40px));
-  margin: 0 auto;
-  padding: 70px 0 50px;
-}
-
-.lab-hero h1 {
-  font-family: "Space Grotesk", Inter, sans-serif;
-  font-size: clamp(3.4rem, 7vw, 8rem);
-  line-height: .92;
-  letter-spacing: -.065em;
-  margin: 0 0 24px;
-}
-
-.lab-hero p {
-  color: var(--muted);
-  max-width: 850px;
-  font-size: 1.14rem;
-  line-height: 1.75;
-}
-
-.lab-video-stack {
+/* Work Page Rewrite: Programming + Roblox Sections */
+.lab-video-stack,
+.roblox-video-stack {
   display: grid;
   gap: 34px;
   margin-top: 38px;
@@ -231,7 +209,8 @@
   background: rgba(255,255,255,.06);
 }
 
-.lab-video-copy h3 {
+.lab-video-copy h3,
+.roblox-video-card h3 {
   font-family: "Space Grotesk", Inter, sans-serif;
   font-size: clamp(1.8rem, 3vw, 3.2rem);
   line-height: 1;
@@ -239,7 +218,8 @@
   margin: 0 0 16px;
 }
 
-.lab-video-copy p {
+.lab-video-copy p,
+.roblox-video-card p {
   color: var(--muted);
   line-height: 1.72;
 }
@@ -262,6 +242,19 @@
   color: var(--text);
   font-weight: 800;
   font-size: .86rem;
+}
+
+.roblox-video-card {
+  background: rgba(255,255,255,.075);
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  padding: 26px;
+}
+
+.roblox-video-card .video-frame {
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 @media(max-width:900px){
