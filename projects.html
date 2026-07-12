@@ -4,288 +4,63 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Work | Charlie Barra</title>
-  <meta name="description" content="Game design, programming, Roblox design studies, and in-progress interactive systems projects by Charlie Barra." />
+  <meta name="description" content="Game design, programming, interactive world design, and in-progress systems projects by Charlie Barra." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <div class="site-bg"></div>
-  <div class="grid-bg"></div>
-
-  <header class="nav">
-    <a class="logo" href="index.html">CB</a>
-    <nav>
-      <a href="story.html">Story</a>
-      <a href="projects.html" aria-current="page">Work</a>
-      <a href="pokemon.html">Competitive Play</a>
-      <a href="notebook.html">Field Notes</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
+  <div class="site-bg"></div><div class="grid-bg"></div>
+  <header class="nav"><a class="logo" href="index.html">CB</a><nav><a href="story.html">Story</a><a href="projects.html" aria-current="page">Work</a><a href="pokemon.html">Competitive Play</a><a href="notebook.html">Field Notes</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></nav></header>
   <main>
-    <section class="case-hero">
+    <section class="case-hero work-index-hero">
       <div>
         <p class="section-label">Work</p>
         <h1>Projects that helped me understand systems.</h1>
-        <p>
-          My projects connect game design, programming, competitive strategy, and interactive learning.
-          Some are polished. Some are still in progress. All of them started with the same question:
-          how do systems shape the choices people make?
-        </p>
+        <p>Some of these projects are complete case studies. Others are experiments or works in progress. Together, they show how I use design, code, testing, and reflection to understand how systems shape the choices people make.</p>
       </div>
       <img src="assets/images/meteor-hero.png" alt="Charlie presenting Meteor Mayhem at a project showcase">
     </section>
 
-    <section class="section" id="meteor">
-      <p class="section-label">Featured Project</p>
-      <h2>Meteor Mayhem</h2>
-      <p class="wide">
-        Meteor Mayhem is an original multiplayer strategy card game about mining resources from a meteor,
-        upgrading ships, managing risk, and disrupting opponents through event cards and environmental hazards.
-      </p>
-
-      <div class="snapshot-grid">
-        <article><span>Role</span><strong>Lead Designer & Creator</strong></article>
-        <article><span>Year</span><strong>2025</strong></article>
-        <article><span>Status</span><strong>Playable Prototype</strong></article>
-        <article><span>Focus</span><strong>Balance + Decision-Making</strong></article>
-      </div>
-    </section>
-
     <section class="section">
-      <p class="section-label">Design Challenge</p>
-      <h2>Can luck matter without deciding who wins?</h2>
-      <p class="wide">
-        I wanted Meteor Mayhem to feel strategic and unpredictable at the same time. Players needed to make
-        meaningful decisions about timing, risk, upgrades, defense, and interaction. The challenge was keeping
-        uncertainty exciting without making the outcome feel random.
-      </p>
-
-      <div class="process-strip">
-        <article><strong>01</strong><span>Research</span><p>Studied games with resource systems, upgrades, and player interaction.</p></article>
-        <article><strong>02</strong><span>Ideation</span><p>Brainstormed mechanics, card types, disasters, and win conditions.</p></article>
-        <article><strong>03</strong><span>Prototype</span><p>Built a playable physical version with cards and components.</p></article>
-        <article><strong>04</strong><span>Testing</span><p>Watched real players interact with the system in unexpected ways.</p></article>
-        <article><strong>05</strong><span>Iteration</span><p>Refined balance, pacing, and card effects based on feedback.</p></article>
-      </div>
-    </section>
-
-    <section class="section">
-      <p class="section-label">Process Evidence</p>
-      <h2>The messy part matters.</h2>
-      <p class="wide">
-        A lot of the real design happened before the final prototype existed. The planning sheets, notes,
-        and card revisions show how the project changed as I tested ideas and simplified mechanics.
-      </p>
-
-      <div class="case-gallery">
-        <figure><img src="assets/images/meteor-process-1.png" alt="Meteor Mayhem planning document"><figcaption>Early planning and project direction.</figcaption></figure>
-        <figure><img src="assets/images/meteor-ideas.png" alt="Meteor Mayhem brainstorming notes"><figcaption>Brainstorming mechanics, card ideas, and possible systems.</figcaption></figure>
-        <figure><img src="assets/images/meteor-design-process.png" alt="Meteor Mayhem design process notes"><figcaption>Design process notes and project reflection.</figcaption></figure>
-        <figure><img src="assets/images/meteor-card-ideas.png" alt="Meteor Mayhem card ideas"><figcaption>Early card effects and mechanics that were revised or removed.</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="section">
-      <p class="section-label">Card System</p>
-      <h2>Readable cards, clear categories, fast decisions.</h2>
-      <p class="wide">
-        I used consistent layouts and clear card categories so players could understand effects quickly.
-        The goal was to keep players focused on strategy instead of constantly stopping to decode the rules.
-      </p>
-
-      <div class="card-sheet-grid">
-        <img src="assets/images/cards-page-1.png" alt="Meteor Mayhem resource and disaster cards">
-        <img src="assets/images/cards-page-2.png" alt="Meteor Mayhem upgrade cards">
-        <img src="assets/images/cards-page-3.png" alt="Meteor Mayhem tool cards">
-        <img src="assets/images/cards-page-4.jpg" alt="Meteor Mayhem event cards">
-      </div>
-    </section>
-
-    <section class="section">
-      <p class="section-label">Video Walkthrough</p>
-      <h2>Watch Meteor Mayhem in action.</h2>
-      <p class="wide">
-        This walkthrough shows the prototype, components, and overall gameplay system.
-      </p>
-
-      <div class="video-frame">
-        <iframe
-          src="https://www.youtube.com/embed/q08nESroUwM"
-          title="Meteor Mayhem video walkthrough"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </section>
-
-    <section class="section" id="programming">
-      <p class="section-label">Programming Projects</p>
-      <h2>Systems beyond games.</h2>
-      <p class="wide">
-        These technical projects show another side of my interest in systems. Programming helped me think
-        about structure, logic, debugging, interfaces, and how a system behaves when something changes.
-      </p>
-
-      <div class="lab-video-stack">
-        <article class="lab-video-card">
-          <iframe src="https://www.youtube.com/embed/VqPjyF9r0QI" title="Interactive Dashboard Application" allowfullscreen></iframe>
-          <div class="lab-video-copy">
-            <p class="tag">Lab 01</p>
-            <h3>Interactive Dashboard Application</h3>
-            <p>An interactive dashboard-style application focused on organizing information clearly, responding to user input, and presenting a functioning interface.</p>
-            <div class="lab-tags"><span>Programming</span><span>Interface</span><span>Debugging</span><span>Technical Communication</span></div>
-          </div>
-        </article>
-
-        <article class="lab-video-card">
-          <iframe src="https://www.youtube.com/embed/EtvkA2_5fsg" title="Restaurant Ordering System" allowfullscreen></iframe>
-          <div class="lab-video-copy">
-            <p class="tag">Lab 02</p>
-            <h3>Restaurant Ordering System</h3>
-            <p>A practical ordering workflow that demonstrates user selections, program logic, interface feedback, and structured application design.</p>
-            <div class="lab-tags"><span>Program Logic</span><span>User Input</span><span>Software Design</span><span>Systems Thinking</span></div>
-          </div>
-        </article>
-
-        <article class="lab-video-card">
-          <iframe src="https://www.youtube.com/embed/Tuhy47UcV2g" title="Interactive Puzzle Game" allowfullscreen></iframe>
-          <div class="lab-video-copy">
-            <p class="tag">Lab 03</p>
-            <h3>Interactive Puzzle Game</h3>
-            <p>An interactive puzzle project focused on player input, rules, state changes, and testing whether the game system behaves as expected.</p>
-            <div class="lab-tags"><span>Interaction</span><span>Testing</span><span>Logic</span><span>Problem Solving</span></div>
-          </div>
-        </article>
-
-        <article class="lab-video-card">
-          <iframe src="https://www.youtube.com/embed/DsgcZfHn2iM" title="Inventory Management Program" allowfullscreen></iframe>
-          <div class="lab-video-copy">
-            <p class="tag">Lab 04</p>
-            <h3>Inventory Management Program</h3>
-            <p>A data-focused application for organizing and managing structured information through a clear workflow.</p>
-            <div class="lab-tags"><span>Data</span><span>Structure</span><span>Workflow</span><span>Communication</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="roblox">
-      <p class="section-label">Interactive World Design</p>
-      <h2>Roblox Design Studies</h2>
-      <p class="wide">
-        Roblox introduced me to the idea that players could also become creators. These design studies helped
-        me experiment with worldbuilding, player agency, and how small design choices can change the way a
-        player experiences a space.
-      </p>
-
-      <div class="lab-video-stack">
-        <article class="lab-video-card">
-          <iframe src="https://www.youtube.com/embed/PaC9bzpJi7U" title="Roblox Design Study 01 – Environment Concept" allowfullscreen></iframe>
-          <div class="lab-video-copy">
-            <p class="tag">Study 01</p>
-            <h3>Environment Concept</h3>
-            <p>My first experiments focused on atmosphere and visual storytelling. I wanted to understand how environment design shapes a player's expectations before any gameplay begins.</p>
-            <div class="lab-tags"><span>Worldbuilding</span><span>Atmosphere</span><span>Visual Design</span><span>Player Expectation</span></div>
-          </div>
-        </article>
-
-        <article class="lab-video-card">
-          <iframe src="https://www.youtube.com/embed/2QZ_AYKrzOE" title="Roblox Design Study 02 – Player Space Prototype" allowfullscreen></iframe>
-          <div class="lab-video-copy">
-            <p class="tag">Study 02</p>
-            <h3>Player Space Prototype</h3>
-            <p>This prototype explored movement, scale, and navigation. Small changes in layout can dramatically affect how players move through and understand an environment.</p>
-            <div class="lab-tags"><span>Layout</span><span>Navigation</span><span>Scale</span><span>Exploration</span></div>
-          </div>
-        </article>
-
-        <article class="lab-video-card">
-          <iframe src="https://www.youtube.com/embed/8u6nqVk8nU4" title="Roblox Design Study 03 – Systems Interaction Test" allowfullscreen></iframe>
-          <div class="lab-video-copy">
-            <p class="tag">Study 03</p>
-            <h3>Systems / Interaction Test</h3>
-            <p>This study focused on interaction and player agency. Instead of building a complete game, I experimented with how individual systems can influence player behavior.</p>
-            <div class="lab-tags"><span>Interaction</span><span>Player Agency</span><span>Systems</span><span>Prototyping</span></div>
-          </div>
-        </article>
-      </div>
-
-      <div class="gallery-grid">
-        <button data-lightbox-src="assets/images/roblox-board-1.jpg" data-caption="Roblox sci-fi environment vision board.">
-          <img src="assets/images/roblox-board-1.jpg" alt="Roblox sci-fi vision board">
-        </button>
-        <button data-lightbox-src="assets/images/roblox-board-2.jpg" data-caption="Roblox design and character inspiration board.">
-          <img src="assets/images/roblox-board-2.jpg" alt="Roblox design vision board">
-        </button>
-      </div>
-    </section>
-
-    <section class="section">
-      <p class="section-label">What’s Next</p>
-      <h2>Projects in progress.</h2>
-      <p class="wide">
-        These projects are still developing, but they show where my interests are headed next:
-        coding interactive systems, modeling probability, and designing tools that help people learn through experimentation.
-      </p>
-
-      <div class="card-grid">
-        <a class="project-card" href="python-game.html">
-          <div class="type-card">PY</div>
-          <h3>Interactive Python Game</h3>
-          <p>Gameplay logic, state management, and player interaction.</p>
-        </a>
-        <a class="project-card" href="probability-simulator.html">
-          <div class="type-card">%</div>
-          <h3>TCG Matchup Probability Simulator</h3>
-          <p>Modeling deck probabilities, matchup outcomes, and competitive balance.</p>
-        </a>
-        <a class="project-card" href="learning-sandbox.html">
-          <div class="type-card">↔</div>
-          <h3>Interactive Learning Sandbox</h3>
-          <p>Exploring how systems can teach through experimentation.</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="contact-card">
-        <p class="section-label">Reflection</p>
-        <h2>Different tools, same question.</h2>
-        <p>
-          Whether I am designing a card game, programming an application, or building a Roblox environment,
-          I keep coming back to the same question: how do systems work, and how can they be made clearer,
-          stronger, and more interesting?
-        </p>
-        <div class="actions">
-          <a class="btn primary" href="story.html">Read My Story</a>
-          <a class="btn" href="notebook.html">Field Notes</a>
+      <p class="section-label">Featured Case Study</p>
+      <a class="work-feature" href="meteor-mayhem.html">
+        <img src="assets/images/meteor-hero.png" alt="Charlie presenting Meteor Mayhem">
+        <div>
+          <p class="tag">Game Design • 2025</p>
+          <h2>Meteor Mayhem</h2>
+          <p>An original multiplayer strategy card game developed from early planning through a playable, tested prototype.</p>
+          <span>View Case Study →</span>
         </div>
+      </a>
+    </section>
+
+    <section class="section">
+      <p class="section-label">Selected Work</p>
+      <h2>Different tools. The same curiosity.</h2>
+      <div class="work-index-grid">
+        <a class="work-index-card" href="programming.html">
+          <div class="type-card">PY</div>
+          <div><p class="tag">Programming</p><h3>Programming Projects</h3><p>Four projects exploring game logic, user input, data, interfaces, and software structure.</p><span>View Programming →</span></div>
+        </a>
+        <a class="work-index-card" href="world-design.html">
+          <img src="assets/images/roblox-board-1.jpg" alt="Roblox environment design vision board">
+          <div><p class="tag">Interactive World Design</p><h3>Roblox Design Studies</h3><p>Environment concepts and prototypes exploring atmosphere, navigation, interaction, and player agency.</p><span>View Design Studies →</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="section-label">In Progress</p>
+      <h2>What I am building next.</h2>
+      <div class="card-grid">
+        <a class="project-card" href="python-game.html"><div class="type-card">PY</div><h3>Interactive Python Game</h3><p>Gameplay logic, state management, and player interaction.</p></a>
+        <a class="project-card" href="probability-simulator.html"><div class="type-card">%</div><h3>TCG Matchup Probability Simulator</h3><p>Modeling deck probabilities, matchup outcomes, and competitive balance.</p></a>
+        <a class="project-card" href="learning-sandbox.html"><div class="type-card">↔</div><h3>Interactive Learning Sandbox</h3><p>Exploring how systems can teach through experimentation.</p></a>
       </div>
     </section>
   </main>
-
-  <footer>
-    <div><strong>Charlie Barra</strong><p>Work and case studies.</p></div>
-    <div class="footer-links">
-      <a href="story.html">Story</a>
-      <a href="pokemon.html">Competitive Play</a>
-      <a href="notebook.html">Field Notes</a>
-      <a href="resume.html">Resume</a>
-    </div>
-  </footer>
-
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
-    <img id="lightboxImage" src="" alt="">
-    <div class="lightbox-caption" id="lightboxCaption"></div>
-  </div>
-
-  <script src="script.js"></script>
+  <footer><div><strong>Charlie Barra</strong><p>Game and interactive systems design.</p></div><div class="footer-links"><a href="story.html">Story</a><a href="pokemon.html">Competitive Play</a><a href="notebook.html">Field Notes</a><a href="resume.html">Resume</a></div></footer>
 </body>
 </html>
