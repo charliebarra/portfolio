@@ -181,20 +181,20 @@
 
 
 /* ==========================================================
-   World Design Page — Final Layout Fix
+   Programming Page — Final Layout Fix
    ========================================================== */
 
-.world-hero {
+.programming-hero {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
   padding: 72px 0 88px;
 }
 
-.world-hero-copy {
+.programming-hero-copy {
   max-width: 920px;
 }
 
-.world-hero h1 {
+.programming-hero h1 {
   font-family: "Space Grotesk", Inter, sans-serif;
   font-size: clamp(3.2rem, 6.5vw, 7.2rem);
   line-height: .94;
@@ -202,7 +202,7 @@
   margin: 0 0 28px;
 }
 
-.world-hero p:not(.section-label) {
+.programming-hero p:not(.section-label) {
   color: var(--muted);
   font-size: 1.16rem;
   line-height: 1.76;
@@ -210,43 +210,21 @@
   margin: 0;
 }
 
-.world-boards-section,
-.world-studies-section {
+.programming-projects-section {
   padding-top: 54px;
 }
 
-.world-board-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px;
-  margin-top: 36px;
+.section-intro {
+  max-width: 940px;
+  margin-bottom: 42px;
 }
 
-.world-board-grid button {
-  appearance: none;
-  border: 1px solid var(--line);
-  padding: 0;
-  background: rgba(255,255,255,.06);
-  border-radius: 28px;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: var(--shadow);
-}
-
-.world-board-grid img {
-  width: 100%;
-  height: 430px;
-  object-fit: cover;
-  display: block;
-}
-
-.world-study-list {
+.programming-project-list {
   display: grid;
   gap: 42px;
-  margin-top: 42px;
 }
 
-.world-study {
+.programming-project {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
   gap: 34px;
@@ -259,15 +237,15 @@
   backdrop-filter: blur(18px);
 }
 
-.world-study:nth-child(even) .world-video {
+.programming-project:nth-child(even) .programming-video {
   order: 2;
 }
 
-.world-study:nth-child(even) .world-study-copy {
+.programming-project:nth-child(even) .programming-project-copy {
   order: 1;
 }
 
-.world-video {
+.programming-video {
   min-width: 0;
   border-radius: 22px;
   overflow: hidden;
@@ -275,18 +253,18 @@
   border: 1px solid var(--line);
 }
 
-.world-video iframe {
+.programming-video iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
   display: block;
   border: 0;
 }
 
-.world-study-copy {
+.programming-project-copy {
   padding: 10px 8px;
 }
 
-.world-study-copy h3 {
+.programming-project-copy h3 {
   font-family: "Space Grotesk", Inter, sans-serif;
   font-size: clamp(2rem, 3.5vw, 3.8rem);
   line-height: 1;
@@ -294,72 +272,48 @@
   margin: 0 0 18px;
 }
 
-.world-study-copy > p:not(.tag) {
+.programming-project-copy > p:not(.tag) {
   color: var(--muted);
   line-height: 1.72;
   font-size: 1.03rem;
   margin: 0;
 }
 
-.world-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.programming-project .lab-tags {
   margin-top: 24px;
 }
 
-.world-tags span {
-  display: inline-flex;
-  align-items: center;
-  min-height: 34px;
-  padding: 0 13px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.08);
-  border: 1px solid var(--line);
-  color: var(--text);
-  font-weight: 800;
-  font-size: .86rem;
-}
-
 @media (max-width: 900px) {
-  .world-hero {
+  .programming-hero {
     padding-top: 48px;
   }
 
-  .world-board-grid,
-  .world-study {
+  .programming-project {
     grid-template-columns: 1fr;
-  }
-
-  .world-board-grid img {
-    height: auto;
-  }
-
-  .world-study {
     padding: 20px;
   }
 
-  .world-study:nth-child(even) .world-video,
-  .world-study:nth-child(even) .world-study-copy {
+  .programming-project:nth-child(even) .programming-video,
+  .programming-project:nth-child(even) .programming-project-copy {
     order: initial;
   }
 
-  .world-study-copy {
+  .programming-project-copy {
     padding: 8px 2px 4px;
   }
 }
 
 @media (max-width: 540px) {
-  .world-hero {
+  .programming-hero {
     width: min(100% - 24px, 1180px);
     padding-bottom: 58px;
   }
 
-  .world-hero h1 {
+  .programming-hero h1 {
     font-size: 3rem;
   }
 
-  .world-study {
+  .programming-project {
     border-radius: 24px;
     gap: 22px;
   }
