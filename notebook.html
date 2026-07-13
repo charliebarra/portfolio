@@ -1,17 +1,32 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Design Notebook | Charlie Barra</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"/></head><body><div class="site-bg"></div><div class="grid-bg"></div><header class="nav"><a class="logo" href="index.html">CB</a><nav><a href="story.html">Story</a><a href="projects.html">Work</a><a href="pokemon.html">Competitive Play</a><a href="notebook.html" aria-current="page">Field Notes</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></nav></header><main>
-<section class="section"><p class="section-label">Design notebook</p><h2>Short thoughts on games, systems, and why players do weird things.</h2><p class="wide">These are not formal essays. They are the kinds of questions I keep coming back to while building, testing, playing, and trying to understand why some systems feel better than others.</p></section>
-<section class="section notebook-wall">
-<article><p>01</p><h3>Why randomness can make strategy better</h3><p>Randomness is frustrating when it decides the game for you. It is interesting when it creates a problem you still have agency to solve. I like games where luck changes the situation, but the player still has to make the best decision from that new position.</p></article>
-<article><p>02</p><h3>What competitive Pokémon taught me about balance</h3><p>A metagame is never finished. When one strategy becomes popular, players build counters. Then the counters create new problems. That cycle made me realize balance is not just a spreadsheet. It is also how real players respond to each other.</p></article>
-<article><p>03</p><h3>Players optimize fun out of games</h3><p>If a game rewards one strategy too strongly, players will use it even if it makes the game less fun. That is not really the player’s fault. It means the system is telling them what to do. Good design should leave room for smart choices without making experimentation feel like a mistake.</p></article>
-<article><p>04</p><h3>Simple rules can create complicated choices</h3><p>I like games where the rules are easy to explain but the decisions are hard. That is harder to design than it sounds. Adding more rules is easy. Making a small rule interact with other systems in interesting ways is much harder.</p></article>
-<article><p>05</p><h3>Roblox changed how I think about creators</h3><p>Roblox showed me that players do not just consume games. They build inside them, remix ideas, and create their own goals. That made me more interested in designing systems that give players room to shape the experience instead of just following one path.</p></article>
-<article><p>06</p><h3>Probability is not the same as fairness</h3><p>Something can be statistically fair and still feel unfair. If a player loses to an effect they could not predict, prepare for, or respond to, the math might be balanced but the experience still feels bad. That was important while balancing Meteor Mayhem.</p></article>
-<article><p>07</p><h3>The moment players broke my game</h3><p>Playtesting is awkward because people immediately find things you missed. But that is the point. If players misunderstand a rule or discover a strategy that ruins the pacing, the design is giving you useful information.</p></article>
-<article><p>08</p><h3>Good UI should almost disappear</h3><p>When an interface works well, players stop thinking about the interface and focus on decisions. When it fails, the interface becomes the game in the worst way. I notice this a lot in games with confusing menus or unclear feedback.</p></article>
-<article><p>09</p><h3>Cybersecurity also feels like systems design</h3><p>Cybersecurity made me think about systems from the opposite direction: how they break, where they are vulnerable, and how small decisions can create big problems. That connects more to game design than I expected.</p></article>
-<article><p>10</p><h3>Why feedback loops matter</h3><p>Players need to understand what happened, why it happened, and what they can do next. Without feedback, a system feels random even when it is not. Clear feedback makes learning possible.</p></article>
-<article><p>11</p><h3>Easy to learn, hard to master</h3><p>This phrase gets used a lot, but I think it means a system should welcome new players while still rewarding deeper understanding. The first game should make sense. The tenth game should still surprise you.</p></article>
-<article><p>12</p><h3>Why I like building prototypes</h3><p>A prototype does not have to be pretty. It just has to answer a question. Does this mechanic work? Do players understand it? Is the decision interesting? I learn more from a rough playable version than from keeping an idea perfect in my head.</p></article>
-</section>
-</main><footer><div><strong>Charlie Barra</strong><p>Design notebook.</p></div><div class="footer-links"><a href="index.html">Story</a><a href="projects.html">Work</a><a href="pokemon.html">Competitive Play</a><a href="resume.html">Resume</a></div></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Field Notes | Charlie Barra</title>
+  <meta name="description" content="Short observations about games, systems, players, and design.">
+  <meta property="og:title" content="Field Notes | Charlie Barra">
+  <meta property="og:description" content="Short observations about games, systems, players, and design.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/meteor-hero.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-bg"></div><div class="grid-bg"></div>
+  <header class="nav"><a class="logo" href="index.html">CB</a><nav><a href="story.html">Story</a><a href="projects.html">Work</a><a href="pokemon.html">Competitive Play</a><a href="notebook.html" aria-current="page">Field Notes</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></nav></header>
+  <main id="main">
+<section class="page-hero"><div><p class="section-label">Design Notebook</p><h1>Short thoughts on games, systems, and why players do weird things.</h1><p>These are brief observations, not finished essays. They help me keep track of questions I want to explore through future projects.</p></div></section>
+<section class="section"><div class="note-grid"><article class="note-card"><h3>Why randomness can make strategy better</h3><p>Randomness is fun when it creates uncertainty, but frustrating when it removes agency. The best luck gives players something new to respond to.</p></article><article class="note-card"><h3>What Pokémon taught me about balance</h3><p>A metagame never stays still. When players solve one strategy, new counters appear.</p></article><article class="note-card"><h3>Players optimize the fun out of games</h3><p>If the most effective strategy is boring, many players will still use it. The system has to make the strong choice interesting too.</p></article><article class="note-card"><h3>Probability is not the same as fairness</h3><p>A result can be statistically reasonable and still feel unfair if the player had no way to prepare or respond.</p></article><article class="note-card"><h3>The moment players broke my game</h3><p>Playtesting Meteor Mayhem showed me strategies I had never considered. That was useful, even when it meant changing the rules.</p></article><article class="note-card"><h3>Good UI should almost disappear</h3><p>The player should be thinking about the decision, not searching for the button that lets them make it.</p></article><article class="note-card"><h3>A tutorial is part of the design</h3><p>Teaching the rules is not separate from the game. It shapes the player's first experience with the system.</p></article><article class="note-card"><h3>Constraints can improve ideas</h3><p>Limits force me to decide which mechanics actually matter.</p></article><article class="note-card"><h3>The difference between difficult and confusing</h3><p>A hard choice can be satisfying. Not understanding what the game wants is usually just frustrating.</p></article><article class="note-card"><h3>Why small changes matter</h3><p>One number, rule, or card frequency can affect several connected parts of a system.</p></article><article class="note-card"><h3>Players need room to surprise you</h3><p>A system becomes more interesting when it supports strategies the designer did not prescribe.</p></article><article class="note-card"><h3>Build the smallest test first</h3><p>A rough prototype can answer a design question faster than polishing an idea that has not been tested.</p></article></div></section>
+</main>
+  <footer>
+      <div><strong>Charlie Barra</strong><p>Curious about systems. Passionate about building better ones.</p></div>
+      <div class="footer-links"><a href="story.html">Story</a><a href="projects.html">Work</a><a href="pokemon.html">Competitive Play</a><a href="notebook.html">Field Notes</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></div>
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>

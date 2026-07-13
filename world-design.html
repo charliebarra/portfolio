@@ -1,189 +1,34 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Interactive World Design | Charlie Barra</title>
-  <meta name="description" content="Roblox environment and interaction design studies by Charlie Barra." />
+  <meta name="description" content="Roblox Studio and Lua design studies by Charlie Barra.">
+  <meta property="og:title" content="Interactive World Design | Charlie Barra">
+  <meta property="og:description" content="Roblox Studio and Lua design studies by Charlie Barra.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/meteor-hero.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
+  
 </head>
-
 <body>
-  <div class="site-bg"></div>
-  <div class="grid-bg"></div>
-
-  <header class="nav">
-    <a class="logo" href="index.html">CB</a>
-    <nav>
-      <a href="story.html">Story</a>
-      <a href="projects.html" aria-current="page">Work</a>
-      <a href="pokemon.html">Competitive Play</a>
-      <a href="notebook.html">Field Notes</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="world-hero">
-      <div class="world-hero-copy">
-        <p class="section-label">Interactive World Design</p>
-        <h1>From player to creator.</h1>
-        <p>
-          Roblox introduced me to the idea that players could also become creators.
-          These studies helped me experiment with atmosphere, navigation, interaction,
-          and how small design choices change the way a player experiences a space.
-        </p>
-      </div>
-    </section>
-
-    <section class="section world-boards-section">
-      <div class="section-intro">
-        <p class="section-label">Visual Direction</p>
-        <h2>Building the world before building the mechanics.</h2>
-        <p class="wide">
-          These boards helped me define the tone, architecture, and visual language
-          of the environments before I started prototyping.
-        </p>
-      </div>
-
-      <div class="world-board-grid">
-        <button data-lightbox-src="assets/images/roblox-board-1.jpg" data-caption="Sci-fi character and environment inspiration board.">
-          <img src="assets/images/roblox-board-1.jpg" alt="Roblox sci-fi character and environment vision board">
-        </button>
-        <button data-lightbox-src="assets/images/roblox-board-2.jpg" data-caption="Sci-fi architecture and environment reference board.">
-          <img src="assets/images/roblox-board-2.jpg" alt="Roblox sci-fi architecture and environment vision board">
-        </button>
-      </div>
-    </section>
-
-    <section class="section world-studies-section">
-      <div class="section-intro">
-        <p class="section-label">Design Studies</p>
-        <h2>Three ways of thinking about interactive space.</h2>
-        <p class="wide">
-          Each study focused on a different design question: atmosphere, navigation,
-          or interaction.
-        </p>
-      </div>
-
-      <div class="world-study-list">
-        <article class="world-study">
-          <div class="world-video">
-            <iframe
-              src="https://www.youtube.com/embed/PaC9bzpJi7U"
-              title="Environment Concept"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="world-study-copy">
-            <p class="tag">Study 01</p>
-            <h3>Environment Concept</h3>
-            <p>
-              My first experiments focused on atmosphere and visual storytelling.
-              I wanted to understand how environment design shapes a player's
-              expectations before gameplay begins.
-            </p>
-            <div class="world-tags">
-              <span>Worldbuilding</span>
-              <span>Atmosphere</span>
-              <span>Visual Direction</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="world-study">
-          <div class="world-video">
-            <iframe
-              src="https://www.youtube.com/embed/2QZ_AYKrzOE"
-              title="Player Space Prototype"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="world-study-copy">
-            <p class="tag">Study 02</p>
-            <h3>Player Space Prototype</h3>
-            <p>
-              This prototype explored movement, scale, and navigation. Small changes
-              in layout can affect how players move through and understand an environment.
-            </p>
-            <div class="world-tags">
-              <span>Layout</span>
-              <span>Navigation</span>
-              <span>Scale</span>
-              <span>Exploration</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="world-study">
-          <div class="world-video">
-            <iframe
-              src="https://www.youtube.com/embed/8u6nqVk8nU4"
-              title="Systems and Interaction Test"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="world-study-copy">
-            <p class="tag">Study 03</p>
-            <h3>Systems / Interaction Test</h3>
-            <p>
-              This study focused on interaction and player agency. Instead of building
-              a complete game, I experimented with how individual systems influence
-              player behavior.
-            </p>
-            <div class="world-tags">
-              <span>Interaction</span>
-              <span>Player Agency</span>
-              <span>Systems</span>
-              <span>Prototyping</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="contact-card">
-        <p class="section-label">Reflection</p>
-        <h2>Spaces teach players how to move.</h2>
-        <p>
-          These studies made me pay more attention to what an environment communicates
-          before a player reads instructions or understands every mechanic.
-        </p>
-        <div class="actions">
-          <a class="btn primary" href="projects.html">Back to Work</a>
-          <a class="btn" href="programming.html">Programming Projects</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-bg"></div><div class="grid-bg"></div>
+  <header class="nav"><a class="logo" href="index.html">CB</a><nav><a href="story.html">Story</a><a href="projects.html" aria-current="page">Work</a><a href="pokemon.html">Competitive Play</a><a href="notebook.html">Field Notes</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></nav></header>
+  <main id="main">
+<section class="page-hero"><div><p class="section-label">Interactive World Design</p><h1>From player to creator.</h1><p>Roblox and Minecraft made me realize that I did not only want to play in other people’s worlds. I wanted to build and change my own. These were personal explorations using Roblox Studio building and Lua scripting.</p></div></section>
+<section class="section"><p class="section-label">Visual Direction</p><h2>Collecting ideas before building.</h2><p class="wide">I assembled these boards as a kid using images I found through online searches. I did not draw the artwork. I used it to collect references for character tone, architecture, materials, and sci-fi environments.</p><div class="gallery-grid"><button data-lightbox-src="assets/images/roblox-board-1.jpg" data-caption="Character, tone, and visual-style references."><img src="assets/images/roblox-board-1.jpg" alt="Character and visual-style reference board"></button><button data-lightbox-src="assets/images/roblox-board-2.jpg" data-caption="Architecture, materials, and sci-fi environment references."><img src="assets/images/roblox-board-2.jpg" alt="Architecture and sci-fi environment reference board"></button></div></section>
+<section class="section"><p class="section-label">Design Studies</p><h2>Three small experiments.</h2><div class="media-list"><article class="media-project"><div class="media-embed"><iframe src="https://www.youtube.com/embed/PaC9bzpJi7U" title="Environment Concept" allowfullscreen></iframe></div><div class="media-copy"><p class="tag">Study 01</p><h3>Environment Concept</h3><p>I was experimenting with how a world feels before the player really knows what to do. I focused on the environment, the mood, and what kind of game the space seemed to promise.</p><div class="pill-row"><span>Worldbuilding</span><span>Atmosphere</span><span>Roblox Studio</span></div></div></article><article class="media-project"><div class="media-embed"><iframe src="https://www.youtube.com/embed/2QZ_AYKrzOE" title="Player Space Prototype" allowfullscreen></iframe></div><div class="media-copy"><p class="tag">Study 02</p><h3>Player Space Prototype</h3><p>This one was more about moving around the space. I changed the layout and scale to see how they affected where the player went and what they noticed first.</p><div class="pill-row"><span>Layout</span><span>Navigation</span><span>Scale</span></div></div></article><article class="media-project"><div class="media-embed"><iframe src="https://www.youtube.com/embed/8u6nqVk8nU4" title="Systems / Interaction Test" allowfullscreen></iframe></div><div class="media-copy"><p class="tag">Study 03</p><h3>Systems / Interaction Test</h3><p>Here I was testing how different interactions changed what the player could do. It was not meant to be a finished game. It was a way to experiment with one system at a time.</p><div class="pill-row"><span>Lua</span><span>Interaction</span><span>Player Agency</span></div></div></article></div></section>
+<section class="section"><div class="contact-card"><p class="section-label">Reflection</p><h2>Spaces teach players how to move.</h2><p>These experiments made me pay more attention to what an environment communicates before the player reads instructions or understands every mechanic.</p><div class="actions"><a class="btn primary" href="projects.html">Back to Work</a><a class="btn" href="programming.html">Programming Projects</a></div></div></section>
+</main>
   <footer>
-    <div>
-      <strong>Charlie Barra</strong>
-      <p>Interactive world design studies.</p>
-    </div>
-    <div class="footer-links">
-      <a href="story.html">Story</a>
-      <a href="projects.html">Work</a>
-      <a href="pokemon.html">Competitive Play</a>
-      <a href="notebook.html">Field Notes</a>
-    </div>
-  </footer>
-
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
-    <img id="lightboxImage" src="" alt="">
-    <div class="lightbox-caption" id="lightboxCaption"></div>
-  </div>
-
+      <div><strong>Charlie Barra</strong><p>Curious about systems. Passionate about building better ones.</p></div>
+      <div class="footer-links"><a href="story.html">Story</a><a href="projects.html">Work</a><a href="pokemon.html">Competitive Play</a><a href="notebook.html">Field Notes</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></div>
+    </footer>
   <script src="script.js"></script>
 </body>
 </html>
