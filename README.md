@@ -121,7 +121,7 @@ All main pages use the same navigation, typography, spacing, cards, buttons, and
 
 ### Mobile first enough to matter
 
-Admissions reviewers may open the portfolio on a phone or tablet, so the site includes:
+Visitors may open the portfolio on a phone or tablet, so the site includes:
 
 - responsive grids,
 - stacked project layouts,
