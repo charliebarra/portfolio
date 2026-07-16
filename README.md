@@ -1,122 +1,222 @@
-# Charlie Barra
+# Charlie Barra Portfolio
 
-### *Curious about systems. Passionate about building better ones.*
+<p align="center">
+  <img src="assets/images/hero-charlie.png" alt="Charlie Barra portfolio hero image" width="760">
+</p>
 
-I'm an aspiring game and interactive systems designer interested in how
-players think, learn, and make decisions. My work combines **game
-design, programming, competitive strategy, and iterative problem
-solving**.
+<p align="center">
+  <strong>A hand-coded portfolio for my game design, programming, competitive Pokémon, and interactive world-design work.</strong>
+</p>
 
-🌐 **Portfolio:** https://charliebarra.github.io/portfolio/
+<p align="center">
+  <a href="https://charliebarra.github.io/portfolio/">View the Live Site</a>
+  ·
+  <a href="https://github.com/charliebarra/meteor-mayhem">Meteor Mayhem Repository</a>
+  ·
+  <a href="https://www.youtube.com/@charlie-barra">Project Videos</a>
+</p>
 
-------------------------------------------------------------------------
+---
 
-# Featured Work
+## Why I Built This
 
-## 🎮 Meteor Mayhem
+I wanted one place where someone could see both **what I built** and **how I got there**.
 
-**Original multiplayer strategy card game**
+The site started as a way to organize projects for college applications, but it became a record of the questions behind them. Most of the work follows the same pattern: I notice something, wonder why it works that way, build something to test it, and usually end up with another question.
 
-My largest independent project. From the first brainstorming notes to a
-fully playable prototype, I designed every system, card, mechanic, and
-balancing decision.
+I built the site by hand instead of using a template because I wanted control over the layout, navigation, project pages, and the way everything connects.
 
-**Highlights**
+## What Is in the Portfolio
 
--   Game systems design
--   Card balancing
--   Resource economy
--   Risk vs. reward
--   Playtesting
--   Design documentation
+### Story
 
-➡ See the complete case study on my portfolio.
+A timeline showing how games, competitive Pokémon, Roblox, Minecraft, programming, and cybersecurity gradually changed the questions I was asking.
 
-------------------------------------------------------------------------
+### Work
 
-## 💻 Programming Projects
+A short project index that leads to the main case studies:
 
-Programming has become another way for me to explore systems.
+- **Meteor Mayhem** — original multiplayer strategy card game
+- **Programming Projects** — four chronological Python projects
+- **Interactive World Design** — Roblox Studio and Lua experiments
 
-### Blackjack Program
+### Competitive Play
 
-Learning randomization, conditional logic, and game rules.
+My experience competing in the Pokémon Trading Card Game, including international events and the World Championships.
 
-### Restaurant Ordering Game
+### Field Notes
 
-Building interactive interfaces with Python Turtle graphics.
+Short observations about games, balance, players, interfaces, prototypes, and questions I am still thinking about.
 
-### Multiplayer Board Game
+### Resume and Contact
 
-Combining visual interfaces with game state management.
+A downloadable résumé and links to GitHub, YouTube, and the rest of the portfolio.
 
-### Adventure Game
+## Featured Case Study
 
-Managing player inventory, locations, and persistent state.
+### Meteor Mayhem
 
-------------------------------------------------------------------------
+Meteor Mayhem is the most complete case study on the site.
 
-## 🌎 Interactive World Design
+It includes:
 
-Roblox design studies exploring:
+- the original design question,
+- early planning and process images,
+- physical prototypes,
+- playtesting photos,
+- an expandable playtesting journal,
+- probability and balancing notes,
+- card sheets,
+- a video walkthrough,
+- and ideas I would explore next.
 
--   Environment design
--   Player navigation
--   Worldbuilding
--   Interactive systems
--   Player agency
+[Read the Meteor Mayhem case study](https://charliebarra.github.io/portfolio/meteor-mayhem.html)
 
-These projects document my transition from player to creator.
+## Technology
 
-------------------------------------------------------------------------
+The site intentionally uses a simple stack:
 
-# Currently Building
+- **HTML5**
+- **CSS3**
+- **Vanilla JavaScript**
+- **GitHub Pages**
+- **YouTube embeds**
+- **No framework**
+- **No build step**
 
--   🐍 Interactive Python Game
--   📈 TCG Matchup Probability Simulator
--   🧪 Interactive Learning Sandbox
+I kept the setup simple so the project would be easy to understand, update, and deploy.
 
-------------------------------------------------------------------------
+## Repository Structure
 
-# Skills
+```text
+portfolio/
+├── index.html                  # Home
+├── story.html                  # Personal timeline
+├── projects.html               # Work index
+├── meteor-mayhem.html          # Flagship case study
+├── programming.html            # Python projects
+├── world-design.html           # Roblox design studies
+├── pokemon.html                # Competitive Pokémon
+├── notebook.html               # Field Notes
+├── resume.html                 # Résumé overview
+├── contact.html                # Contact links
+├── styles.css                  # Shared visual system
+├── script.js                   # Lightbox and interactions
+├── assets/
+│   └── images/                 # Optimized site images
+├── documents/
+│   └── Charlie-Barra-Resume.pdf
+├── favicon.ico
+├── site.webmanifest
+└── README.md
+```
 
-### Design
+Some redirect pages remain in the repository so older links continue to work.
 
--   Game Systems Design
--   Balance & Iteration
--   Playtesting
--   UX Thinking
--   Prototyping
+## Design Decisions
 
-### Programming
+### One shared visual system
 
--   Python
--   Git & GitHub
--   HTML / CSS
--   Roblox Studio
+All main pages use the same navigation, typography, spacing, cards, buttons, and footer styles.
 
-### Other
+### Mobile first enough to matter
 
--   Cybersecurity Fundamentals
--   Technical Problem Solving
--   Competitive Strategy
+Admissions reviewers may open the portfolio on a phone or tablet, so the site includes:
 
-------------------------------------------------------------------------
+- responsive grids,
+- stacked project layouts,
+- larger touch targets,
+- mobile-friendly navigation,
+- reduced-motion support,
+- and images that resize without overflowing.
 
-# Design Philosophy
+### Process over polish
 
-> "The best systems don't tell people what to do---they create
-> meaningful choices."
+The site does not only show finished work. It also includes sketches, early versions, playtesting evidence, bugs, changes, and questions that are still open.
 
-Whether I'm designing a game, programming an application, or studying
-competitive strategy, I'm most interested in understanding **how systems
-influence decisions** and improving them through testing and iteration.
+That part matters to me because the finished project is usually not the most interesting part of the story.
 
-------------------------------------------------------------------------
+### Accessibility
 
-# Connect
+The site includes:
 
-🌐 Portfolio\
-https://charliebarra.github.io/portfolio/
+- semantic HTML,
+- descriptive image alt text,
+- visible keyboard focus,
+- a skip-to-content link,
+- labeled gallery controls,
+- reduced-motion support,
+- and an accessible image lightbox.
 
-Thank you for visiting my GitHub!
+## Run the Site Locally
+
+There is no installation or build process.
+
+### Option 1 — Open directly
+
+Download the repository and open:
+
+```text
+index.html
+```
+
+in a browser.
+
+### Option 2 — Use a local server
+
+From the repository folder, run:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit:
+
+```text
+http://localhost:8000
+```
+
+A local server is useful for checking links and asset paths before deploying.
+
+## Deployment
+
+The site is deployed through GitHub Pages from this repository.
+
+Live site:
+
+**https://charliebarra.github.io/portfolio/**
+
+When files are committed to the publishing branch, GitHub Pages rebuilds the site automatically.
+
+## Updating the Portfolio
+
+When I add a new project, I try to include more than a title and a screenshot.
+
+A strong project page should answer:
+
+1. What was I trying to figure out?
+2. What did I build?
+3. What changed while I was making it?
+4. What surprised me?
+5. What would I try next?
+
+That makes the site more useful than a list of finished assignments.
+
+## Current Priorities
+
+- Organize the four Python projects into their own GitHub repositories
+- Add source-code links and visual READMEs
+- Keep documenting playtesting and design changes
+- Finish the TCG matchup simulator
+- Add new Field Notes when I notice something worth keeping
+
+## Related Links
+
+- [Live Portfolio](https://charliebarra.github.io/portfolio/)
+- [GitHub Profile](https://github.com/charliebarra)
+- [Meteor Mayhem Repository](https://github.com/charliebarra/meteor-mayhem)
+- [YouTube Channel](https://www.youtube.com/@charlie-barra)
+
+---
+
+This repository is the technical side of the portfolio. The website tells the story; the files here show how I built and organized it.
