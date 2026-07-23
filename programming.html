@@ -13,9 +13,9 @@
 <link href="site.webmanifest" rel="manifest"/>
 <meta content="#11161D" name="theme-color"/>
 <title>Programming Projects | Charlie Barra</title>
-<meta content="Four chronological Python programming projects by Charlie Barra." name="description"/>
+<meta content="Four chronological Python and Java programming projects by Charlie Barra." name="description"/>
 <meta content="Programming Projects | Charlie Barra" property="og:title"/>
-<meta content="Four chronological Python programming projects by Charlie Barra." property="og:description"/>
+<meta content="Four chronological Python and Java programming projects by Charlie Barra." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="assets/images/meteor-hero.png" property="og:image"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -25,17 +25,155 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<div class="site-bg"></div><div class="grid-bg"></div>
-<header class="nav"><a class="logo" href="index.html">CB</a><nav><a href="story.html">Story</a><a aria-current="page" href="projects.html">Work</a><a href="pokemon.html">Competitive Play</a><a href="notebook.html">Field Notes</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></nav></header>
+<div class="site-bg">
+</div>
+<div class="grid-bg">
+</div>
+<header class="nav">
+<a class="logo" href="index.html">CB</a>
+<nav>
+<a href="story.html">Story</a>
+<a aria-current="page" href="projects.html">Work</a>
+<a href="pokemon.html">Competitive Play</a>
+<a href="notebook.html">Field Notes</a>
+<a href="resume.html">Resume</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
 <main id="main">
-<section class="page-hero"><div><p class="section-label">Programming Projects</p><h1>Learning by building from scratch.</h1><p>Programming gave me another way to answer questions. Working on larger programs also changed the way I organized game rules and ideas in projects like Meteor Mayhem. It also taught me that changing one line can fix the problem, create three new ones, or somehow do both.</p></div></section>
-<section class="section"><p class="section-label">Selected Projects</p><h2>Four projects, shown in chronological order.</h2><p class="wide">Each project gave me one new idea to learn and something interactive to build with it.</p><div class="media-list"><article class="media-project"><div class="media-embed"><iframe allowfullscreen="" src="https://www.youtube.com/embed/DsgcZfHn2iM" title="Adventure Game"></iframe></div><div class="media-copy"><p class="tag">Project 01</p><h3>Adventure Game</h3><p>This was one of my first larger programming projects. I had to track inventory, location, and progression without losing any of them along the way. It showed me how several small pieces of code have to work together for the game to make sense.</p><div class="pill-row"><span>Game State</span><span>Inventory</span><span>Navigation</span><span>Progression</span></div></div></article><article class="media-project"><div class="media-embed"><iframe allowfullscreen="" src="https://www.youtube.com/embed/VqPjyF9r0QI" title="Blackjack Program"></iframe></div><div class="media-copy"><p class="tag">Project 02</p><h3>Blackjack Program</h3><p>This project taught me how to randomize card draws, check conditions, and decide whether the player or dealer won. Blackjack was familiar enough that I could tell immediately when the code was doing something impossible.</p><div class="pill-row"><span>Randomization</span><span>Game Logic</span><span>Conditions</span><span>Debugging</span></div></div></article><article class="media-project"><div class="media-embed"><iframe allowfullscreen="" src="https://www.youtube.com/embed/EtvkA2_5fsg" title="Restaurant Ordering Game"></iframe></div><div class="media-copy"><p class="tag">Project 03</p><h3>Restaurant Ordering Game</h3><p>I wanted to add visuals using Python’s Turtle graphics, so I made an incremental pizza-making game. It helped me combine graphics, user input, and a system that changed as the player kept going.</p><div class="pill-row"><span>Python Turtle</span><span>Graphics</span><span>User Input</span><span>Incremental Systems</span></div></div></article><article class="media-project"><div class="media-embed"><iframe allowfullscreen="" src="https://www.youtube.com/embed/Tuhy47UcV2g" title="Multiplayer Board Game"></iframe></div><div class="media-copy"><p class="tag">Project 04</p><h3>Multiplayer Board Game</h3><p>For this project, I combined what I had learned about visuals and game logic into a four-player, turn-based board game. Keeping track of four players was exactly as simple as it sounds.</p><div class="pill-row"><span>Four Players</span><span>Turn-Based</span><span>Game State</span><span>Interaction</span></div></div></article></div></section>
-<section class="section"><div class="contact-card"><p class="section-label">Source Code</p><h2>Code repositories coming next.</h2><p>All four projects have source code. I am organizing it into GitHub repositories with screenshots, README files, and short explanations of what each part does.</p><div class="actions"><a class="btn primary" href="projects.html">Back to Work</a><a class="btn" href="world-design.html">World Design</a></div></div></section>
+<section class="page-hero">
+<div>
+<p class="section-label">Programming Projects</p>
+<h1>Learning by building from scratch.</h1>
+<p>Programming gave me another way to answer questions. Working on larger programs also changed the way I organized game rules and ideas in projects like Meteor Mayhem. It also taught me that changing one line can fix the problem, create three new ones, or somehow do both.</p>
+</div>
+</section>
+<section class="section">
+<p class="section-label">Selected Projects</p>
+<h2>Four projects, shown in chronological order.</h2>
+<p class="wide">Each project gave me one new idea to learn and something interactive to build with it. These are selected demonstrations of the finished programs; the original source code is being organized into separate repositories.</p>
+<div class="media-list">
+<article class="media-project">
+<div class="media-embed">
+<iframe allowfullscreen="" loading="lazy" src="https://www.youtube.com/embed/DsgcZfHn2iM" title="Adventure Game demonstration">
+</iframe>
+</div>
+<div class="media-copy">
+<p class="tag">Project 01</p>
+<h3>Adventure Game</h3>
+<div class="project-facts"><span><b>Role</b> Solo developer</span><span><b>Tool</b> Python</span><span><b>Duration</b> About one day</span><span><b>Scope</b> Rooms, inventory, navigation, progression</span></div>
+<h4>Why I built it</h4>
+<p>I wanted to see whether I could make a navigable game world using only text and keep track of what the player collected along the way.</p>
+<h4>What surprised me</h4>
+<p>The inventory system was the part I was proudest of. Looking back, I would make picked-up items disappear from their rooms instead of letting the room act like nothing changed.</p>
+<h4>What I would add next</h4>
+<p>More rooms—and better tracking of how the world changes after the player interacts with it.</p>
+<div class="pill-row">
+<span>Game State</span>
+<span>Inventory</span>
+<span>Navigation</span>
+<span>Progression</span>
+</div>
+</div>
+</article>
+<article class="media-project">
+<div class="media-embed">
+<iframe allowfullscreen="" loading="lazy" src="https://www.youtube.com/embed/VqPjyF9r0QI" title="Blackjack Program demonstration">
+</iframe>
+</div>
+<div class="media-copy">
+<p class="tag">Project 02</p>
+<h3>Blackjack Program</h3>
+<div class="project-facts"><span><b>Role</b> Solo developer</span><span><b>Tool</b> Java</span><span><b>Scope</b> Card draws, dealer logic, betting, win states</span></div>
+<h4>Why I built it</h4>
+<p>I wanted to turn rules I already understood as a player into rules the computer could check for itself.</p>
+<h4>Biggest challenge</h4>
+<p>Checking every win state took the longest. I also had a bug where a card would not draw correctly, which made a familiar game start doing impossible things.</p>
+<h4>What surprised me</h4>
+<p>It was funny how often I still lost to the dealer after writing the dealer. If I kept working on it, I would add visuals so the game was easier to read at a glance.</p>
+<div class="pill-row">
+<span>Randomization</span>
+<span>Game Logic</span>
+<span>Conditions</span>
+<span>Debugging</span>
+</div>
+</div>
+</article>
+<article class="media-project">
+<div class="media-embed">
+<iframe allowfullscreen="" loading="lazy" src="https://www.youtube.com/embed/EtvkA2_5fsg" title="Restaurant Ordering Game demonstration">
+</iframe>
+</div>
+<div class="media-copy">
+<p class="tag">Project 03</p>
+<h3>Restaurant Ordering Game</h3>
+<div class="project-facts"><span><b>Role</b> Solo developer</span><span><b>Tool</b> Python + Turtle</span><span><b>Scope</b> Random orders, stations, visuals, upgrades</span></div>
+<h4>Why I built it</h4>
+<p>I wanted to combine a visual interface with an incremental game where the system changed as the player kept making orders.</p>
+<h4>Biggest challenge</h4>
+<p>The upgrade system took the longest because every improvement had to change what happened next without breaking the rest of the loop.</p>
+<h4>What surprised me</h4>
+<p>The random order generator and the visuals became the parts I was most proud of. With another week, I would add better visuals and more stations.</p>
+<div class="pill-row">
+<span>Python Turtle</span>
+<span>Graphics</span>
+<span>User Input</span>
+<span>Incremental Systems</span>
+</div>
+</div>
+</article>
+<article class="media-project">
+<div class="media-embed">
+<iframe allowfullscreen="" loading="lazy" src="https://www.youtube.com/embed/Tuhy47UcV2g" title="Multiplayer Board Game demonstration">
+</iframe>
+</div>
+<div class="media-copy">
+<p class="tag">Project 04</p>
+<h3>Multiplayer Board Game</h3>
+<div class="project-facts"><span><b>Role</b> Solo developer</span><span><b>Tool</b> Python + Turtle</span><span><b>Scope</b> Four players, turns, board movement, mystery spaces</span></div>
+<h4>Why I built it</h4>
+<p>I wanted to combine graphics and game rules in a program that had to remember four players at the same time.</p>
+<h4>Biggest challenge</h4>
+<p>Getting the pieces around the board took the longest. One bug only appeared when a piece was sent backward and reached one specific corner. That was as annoying to find as it sounds.</p>
+<h4>What surprised me</h4>
+<p>The mystery blocks were the feature I was weirdly proud of. I would make the board bigger and add more spaces that actually change the game.</p>
+<div class="pill-row">
+<span>Four Players</span>
+<span>Turn-Based</span>
+<span>Game State</span>
+<span>Interaction</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="section">
+<div class="contact-card">
+<p class="section-label">Source Code</p>
+<h2>Code repositories coming next.</h2>
+<p>All four projects have source code. I am organizing it into GitHub repositories with screenshots, README files, and short explanations of what each part does.</p>
+<div class="actions">
+<a class="btn primary" href="projects.html">Back to Work</a>
+<a class="btn" href="world-design.html">World Design</a>
+</div>
+</div>
+</section>
 </main>
 <footer>
-<div><strong>Charlie Barra</strong><p>Curious about systems. Passionate about building better ones.</p></div>
-<div class="footer-links"><a href="story.html">Story</a><a href="projects.html">Work</a><a href="pokemon.html">Competitive Play</a><a href="notebook.html">Field Notes</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></div>
+<div>
+<strong>Charlie Barra</strong>
+<p>Curious about systems. Passionate about building better ones.</p>
+</div>
+<div class="footer-links">
+<a href="story.html">Story</a>
+<a href="projects.html">Work</a>
+<a href="pokemon.html">Competitive Play</a>
+<a href="notebook.html">Field Notes</a>
+<a href="resume.html">Resume</a>
+<a href="contact.html">Contact</a>
+</div>
 </footer>
-<script src="script.js"></script>
+<script src="script.js">
+</script>
 </body>
 </html>

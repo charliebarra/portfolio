@@ -1,5 +1,14 @@
 
 document.addEventListener("DOMContentLoaded", () => {
+  const footerLinks = document.querySelector(".footer-links");
+  if (footerLinks && !footerLinks.querySelector("[data-site-credits-link]")) {
+    const creditsLink = document.createElement("a");
+    creditsLink.href = "contact.html#site-credits";
+    creditsLink.textContent = "Site Credits";
+    creditsLink.dataset.siteCreditsLink = "";
+    footerLinks.appendChild(creditsLink);
+  }
+
   let lastTrigger = null;
   const lightbox = document.createElement("div");
   lightbox.className = "lightbox";

@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://charliebarra.github.io/portfolio/">View the Live Site</a>
+  <a href="https://charliebarra.com/">View the Live Site</a>
   ·
   <a href="https://github.com/charliebarra/meteor-mayhem">Meteor Mayhem Repository</a>
   ·
@@ -70,7 +70,7 @@ It includes:
 - a video walkthrough,
 - and ideas I would explore next.
 
-[Read the Meteor Mayhem case study](https://charliebarra.github.io/portfolio/meteor-mayhem.html)
+[Read the Meteor Mayhem case study](https://charliebarra.com/meteor-mayhem.html)
 
 ## Technology
 
@@ -184,7 +184,7 @@ The site is deployed through GitHub Pages from this repository.
 
 Live site:
 
-**https://charliebarra.github.io/portfolio/**
+**https://charliebarra.com/**
 
 When files are committed to the publishing branch, GitHub Pages rebuilds the site automatically.
 
@@ -212,7 +212,7 @@ That makes the site more useful than a list of finished assignments.
 
 ## Related Links
 
-- [Live Portfolio](https://charliebarra.github.io/portfolio/)
+- [Live Portfolio](https://charliebarra.com/)
 - [GitHub Profile](https://github.com/charliebarra)
 - [Meteor Mayhem Repository](https://github.com/charliebarra/meteor-mayhem)
 - [YouTube Channel](https://www.youtube.com/@charlie-barra)
@@ -220,3 +220,11 @@ That makes the site more useful than a list of finished assignments.
 ---
 
 This repository is the technical side of the portfolio. The website tells the story; the files here show how I built and organized it.
+
+## Site Credits and AI Use
+
+This portfolio was developed collaboratively. OpenAI’s ChatGPT supported editorial refinement, content organization, design thinking, accessibility review, quality assurance, and presentation.
+
+My programming projects, game designs, project decisions, reflections, competitive accomplishments, and underlying work are my own unless a page says otherwise. AI helped me organize and present the work; it did not create the original projects or accomplishments.
+
+The visual reference boards on the Interactive World Design page contain third-party images collected through online searches. I selected and arranged those references, but I did not create the individual artworks.
