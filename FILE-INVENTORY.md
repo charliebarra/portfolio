@@ -37,7 +37,7 @@
 
 ## Site configuration and icons
 
-- `CNAME` — `charliebarra.com`
+- No `CNAME` is included in this recovery package. Add it only after the custom domain is configured in GitHub Pages and Namecheap DNS.
 - `site.webmanifest`
 - `favicon.ico`
 - `favicon-16x16.png`
@@ -56,4 +56,3 @@
 - `DREXEL-REVIEW-CHANGELOG.md`
 - `UNRESOLVED-FACTS.md`
 - `FILE-INVENTORY.md`
-
