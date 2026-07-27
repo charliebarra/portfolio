@@ -37,7 +37,9 @@
 
 ## Site configuration and icons
 
-- No `CNAME` is included in this recovery package. Add it only after the custom domain is configured in GitHub Pages and Namecheap DNS.
+- `CNAME` — configures the GitHub Pages project site for `www.charliebarra.com`
+- `robots.txt` — permits indexing and points search engines to the canonical sitemap
+- `sitemap.xml` — lists the canonical public pages at `www.charliebarra.com`
 - `site.webmanifest`
 - `favicon.ico`
 - `favicon-16x16.png`

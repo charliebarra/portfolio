@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://charliebarra.github.io/portfolio/">View the Live Site</a>
+  <a href="https://www.charliebarra.com/">View the Live Site</a>
   ·
   <a href="https://github.com/charliebarra/meteor-mayhem">Meteor Mayhem Repository</a>
   ·
@@ -70,7 +70,7 @@ It includes:
 - a video walkthrough,
 - and ideas I would explore next.
 
-[Read the Meteor Mayhem case study](https://charliebarra.github.io/portfolio/meteor-mayhem.html)
+[Read the Meteor Mayhem case study](https://www.charliebarra.com/meteor-mayhem.html)
 
 ## Technology
 
@@ -184,9 +184,9 @@ The site is deployed through GitHub Pages from this repository.
 
 Live site:
 
-**https://charliebarra.github.io/portfolio/**
+**https://www.charliebarra.com/**
 
-When files are committed to the publishing branch, GitHub Pages rebuilds the site automatically.
+The repository remains a GitHub Pages project site. Its custom domain presents the site publicly at `www.charliebarra.com`, while commits to the publishing branch continue to rebuild the deployment automatically.
 
 ## Updating the Portfolio
 
@@ -212,7 +212,7 @@ That makes the site more useful than a list of finished assignments.
 
 ## Related Links
 
-- [Live Portfolio](https://charliebarra.github.io/portfolio/)
+- [Live Portfolio](https://www.charliebarra.com/)
 - [GitHub Profile](https://github.com/charliebarra)
 - [Meteor Mayhem Repository](https://github.com/charliebarra/meteor-mayhem)
 - [YouTube Channel](https://www.youtube.com/@charlie-barra)
