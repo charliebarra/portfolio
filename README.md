@@ -65,12 +65,15 @@ It includes:
 - physical prototypes,
 - playtesting photos,
 - an expandable playtesting journal,
+- the Meteor Mayhem Rulebook (Prototype Edition),
 - probability and balancing notes,
 - card sheets,
 - a video walkthrough,
 - and ideas I would explore next.
 
 [Read the Meteor Mayhem case study](https://www.charliebarra.com/meteor-mayhem.html)
+
+[View the Meteor Mayhem Rulebook (Prototype Edition)](documents/Meteor-Mayhem-Rulebook-Prototype-Edition.pdf)
 
 ## Technology
 
