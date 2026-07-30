@@ -492,7 +492,9 @@ footer p{margin:.4rem 0 0}
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
-  margin-top: 34px;
+  width: 100%;
+  max-width: 606px;
+  margin: 34px auto 0;
 }
 
 .playtest-photo-grid figure {
@@ -516,7 +518,7 @@ footer p{margin:.4rem 0 0}
 .playtest-photo-grid img {
   display: block;
   width: 100%;
-  height: 360px;
+  height: 292px;
   object-fit: cover;
 }
 
@@ -771,13 +773,16 @@ footer p{margin:.4rem 0 0}
     grid-template-columns: 1fr;
   }
 
+  .playtest-photo-grid {
+    max-width: 292px;
+  }
+
   .journal-entry-wide {
     grid-column: auto;
   }
 
   .playtest-photo-grid img {
-    height: auto;
-    max-height: 480px;
+    height: 292px;
   }
 
   .playtesting-journal summary {
