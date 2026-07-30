@@ -184,6 +184,20 @@ p{line-height:1.72}
   font-weight:800;
   line-height:1.55;
 }
+.design-quote{
+  max-width:930px;
+  margin:30px 0;
+  padding:26px 30px;
+  border-left:4px solid var(--orange);
+  border-radius:18px;
+  background:var(--panel);
+  box-shadow:var(--shadow);
+  font-family:"Space Grotesk",Inter,sans-serif;
+  font-size:clamp(1.25rem,2.2vw,1.75rem);
+  font-weight:700;
+  line-height:1.5;
+}
+.artifact-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 .story-chapter{padding:76px 0;border-top:1px solid var(--line)}
 .chapter-grid{
   display:grid;
@@ -412,6 +426,7 @@ footer p{margin:.4rem 0 0}
   .hero-media img,.story-hero>img,.case-hero>img,.chapter-image img{height:auto;max-height:620px}
   .principle-grid,.feature-grid,.note-grid{grid-template-columns:1fr}
   .work-grid,.resume-grid,.lesson-grid{grid-template-columns:1fr}
+  .artifact-grid{grid-template-columns:1fr}
   .snapshot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .gallery-grid.four{grid-template-columns:repeat(2,minmax(0,1fr))}
   .tournament-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}

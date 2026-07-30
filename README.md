@@ -73,7 +73,7 @@ It includes:
 
 [Read the Meteor Mayhem case study](https://www.charliebarra.com/meteor-mayhem.html)
 
-[View the Meteor Mayhem Rulebook (Prototype Edition)](documents/Meteor-Mayhem-Rulebook-Prototype-Edition.pdf)
+[View the Meteor Mayhem Rulebook (Prototype Edition)](documents/Meteor-Mayhem-Rulebook.pdf)
 
 ## Technology
 
