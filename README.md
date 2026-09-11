@@ -37,7 +37,8 @@ A timeline showing how games, competitive Pokémon, Roblox, Minecraft, programmi
 A short project index that leads to the main case studies:
 
 - **Meteor Mayhem** — original multiplayer strategy card game
-- **Programming Projects** — four chronological Python projects
+- **Swap Monsters** — published Godot platformer built around three character abilities
+- **Programming Projects** — four chronological Python and Java projects
 - **Interactive World Design** — Roblox Studio and Lua experiments
 
 ### Competitive Play
@@ -75,6 +76,14 @@ It includes:
 
 [View the Meteor Mayhem Rulebook (Prototype Edition)](documents/Meteor-Mayhem-Rulebook.pdf)
 
+### Swap Monsters
+
+Swap Monsters is a published Godot platformer created independently during a two-week Urban Arts course. Its case study documents the three-character ability system, switching resource, cave routing, seven-day development process, technical evidence, debugging, and third-party asset attribution.
+
+[Read the Swap Monsters case study](https://www.charliebarra.com/swap-monsters.html)
+
+[Play Swap Monsters on itch.io](https://spaceninja910.itch.io/swap-monsters)
+
 ## Technology
 
 The site intentionally uses a simple stack:
@@ -97,7 +106,8 @@ portfolio/
 ├── story.html                  # Personal timeline
 ├── projects.html               # Work index
 ├── meteor-mayhem.html          # Flagship case study
-├── programming.html            # Python projects
+├── swap-monsters.html          # Godot game case study
+├── programming.html            # Python and Java projects
 ├── world-design.html           # Roblox design studies
 ├── pokemon.html                # Competitive Pokémon
 ├── notebook.html               # Field Notes

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="favicon.ico" rel="icon" sizes="any"/>
+<link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link color="#22C55E" href="safari-pinned-tab.svg" rel="mask-icon"/>
+<link href="site.webmanifest" rel="manifest"/>
+<meta content="#11161D" name="theme-color"/>
+<title>Swap Monsters | Charlie Barra</title>
+<meta content="A Godot platformer case study by Charlie Barra about designing one cave around three character abilities." name="description"/>
+<link href="https://www.charliebarra.com/swap-monsters.html" rel="canonical"/>
+<meta content="Swap Monsters | Charlie Barra" property="og:title"/>
+<meta content="A Godot platformer case study about character switching, ability design, resource management, and level progression." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.charliebarra.com/swap-monsters.html" property="og:url"/>
+<meta content="Charlie Barra" property="og:site_name"/>
+<meta content="https://www.charliebarra.com/assets/images/swap-monsters/swap-monsters-hero.png" property="og:image"/>
+<meta content="Swap Monsters cave level and three-character switching system" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Swap Monsters | Charlie Barra" name="twitter:title"/>
+<meta content="A Godot platformer case study about character switching, ability design, resource management, and level progression." name="twitter:description"/>
+<meta content="https://www.charliebarra.com/assets/images/swap-monsters/swap-monsters-hero.png" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site-bg"></div><div class="grid-bg"></div>
+<header class="nav"><a class="logo" href="index.html">CB</a><nav><a href="story.html">Story</a><a aria-current="page" href="projects.html">Work</a><a href="pokemon.html">Competitive Play</a><a href="notebook.html">Field Notes</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></nav></header>
+<main id="main">
+<section class="case-hero">
+<div><p class="section-label">Published Godot Game</p><h1>Swap Monsters</h1><p>How do you build one cave that works for three characters with completely different movement abilities? I designed the route around switching between a dash, a glide, and a projectile, then built the systems that make those choices matter.</p><div class="actions"><a class="btn primary" href="https://spaceninja910.itch.io/swap-monsters" rel="noopener" target="_blank">Play on itch.io</a><a class="btn" href="#process">See the Process</a></div></div>
+<img alt="Swap Monsters cave level showing the character, switching meter, platforms, signs, and breakable crystals" decoding="async" height="1354" src="assets/images/swap-monsters/swap-monsters-hero.png" width="1684"/>
+</section>
+
+<section class="section">
+<div class="snapshot-grid swap-snapshot">
+<article><span>Role</span><strong>Solo game designer and gameplay programmer</strong></article>
+<article><span>Duration</span><strong>Two-week, 30-hour virtual course</strong></article>
+<article><span>Engine</span><strong>Godot with GDScript</strong></article>
+<article><span>Status</span><strong>Published playable build</strong></article>
+<article><span>Program</span><strong>Urban Arts</strong></article>
+<article><span>Scope</span><strong>One complete cave level, three characters</strong></article>
+</div>
+<p class="context-note"><strong>Project context:</strong> Each student worked independently from the same Endless Access Moddable Platformer foundation. I replaced and customized the player systems and developed a new cave game with my own mechanics, route, progression, and character interactions.</p>
+</section>
+
+<section class="section">
+<p class="section-label">The Design Question</p>
+<h2>Making every character feel necessary.</h2>
+<p class="wide">I wanted switching to be more than choosing a different sprite. Each character needed a movement or interaction ability that solved a different kind of obstacle. The level then had to introduce those abilities clearly and create reasons to combine them.</p>
+<div class="player-loop" aria-label="Swap Monsters player loop">
+<span>Explore</span><b>→</b><span>Read the obstacle</span><b>→</b><span>Choose a character</span><b>→</b><span>Spend a switch</span><b>→</b><span>Use the ability</span><b>→</b><span>Recover and continue</span>
+</div>
+</section>
+
+<section class="section">
+<p class="section-label">Character System</p>
+<h2>Three abilities, one shared route.</h2>
+<div class="ability-grid">
+<article><img alt="Bunny ability breakdown showing an air dash across gaps and up walls" loading="lazy" src="assets/images/swap-monsters/bunny-ability.png"/><div><h3>Bunny: Air Dash</h3><p>Crosses gaps and gains height along steep walls. The dash turns open space into a route instead of a dead end.</p></div></article>
+<article><img alt="Owlet ability breakdown showing the glider slowing a fall" loading="lazy" src="assets/images/swap-monsters/owlet-ability.png"/><div><h3>Owlet: Glide</h3><p>Slows the fall while preserving horizontal momentum. This makes long gaps manageable when a dash would drop too quickly.</p></div></article>
+<article><img alt="Dude ability breakdown showing an arrow breaking a crystal barrier" loading="lazy" src="assets/images/swap-monsters/dude-ability.png"/><div><h3>Dude: Projectile</h3><p>Fires an arrow that breaks crystal obstacles. Dude creates access while Bunny and Owlet handle traversal.</p></div></article>
+</div>
+</section>
+
+<section class="section" id="process">
+<p class="section-label">Process and Iteration</p>
+<h2>Seven working days from controller to published level.</h2>
+<div class="swap-process">
+<article><strong>01</strong><span>Character feel</span><p>Assembled the first animated character and added randomized footstep sounds.</p></article>
+<article><strong>02</strong><span>Controller</span><p>Removed the original player script and built a state-based controller with movement, jumping, attacks, wall interaction, and air movement.</p></article>
+<article><strong>03</strong><span>Switching</span><p>Added three characters and reset the air dash and double jump when switching.</p></article>
+<article><strong>04</strong><span>Abilities</span><p>Separated the dash, bow, and glide, then adjusted the camera so players could read the route at higher speed.</p></article>
+<article><strong>05</strong><span>Resource system</span><p>Added a four-stage switching meter, recharge behavior, breakable barriers, and meter-restoring crystals.</p></article>
+<article><strong>06</strong><span>Map planning</span><p>Sketched the cave route and planned where each ability would become useful.</p></article>
+<article><strong>07</strong><span>Build and ship</span><p>Assembled the planned level, added instructional signs and finishing details, and published the playable build.</p></article>
+</div>
+</section>
+
+<section class="section">
+<p class="section-label">Level Design</p>
+<h2>Teaching through the route.</h2>
+<p class="wide">The cave introduces one problem at a time. Signs explain the immediate action, but the geometry does the real teaching: gaps ask for Bunny's dash, long drops ask for Owlet's glide, and crystal barriers ask for Dude's arrow. Later sections combine those ideas and make the player decide when switching is worth spending a meter segment.</p>
+<div class="gallery-grid swap-gallery">
+<button aria-label="Open cave introduction image" data-caption="The opening establishes the escape objective and introduces the cave route." data-lightbox-src="assets/images/swap-monsters/cave-opening.png"><img alt="Opening of Swap Monsters with the cave escape objective" loading="lazy" src="assets/images/swap-monsters/cave-opening.png"/></button>
+<button aria-label="Open Bunny tutorial image" data-caption="An early sign pairs Bunny's air dash with a visible traversal problem." data-lightbox-src="assets/images/swap-monsters/bunny-tutorial.png"><img alt="Bunny tutorial area explaining the air dash" loading="lazy" src="assets/images/swap-monsters/bunny-tutorial.png"/></button>
+<button aria-label="Open Owlet tutorial image" data-caption="Owlet's glide is introduced where controlling a fall is the clearest solution." data-lightbox-src="assets/images/swap-monsters/owlet-tutorial.png"><img alt="Owlet tutorial area explaining how to glide" loading="lazy" src="assets/images/swap-monsters/owlet-tutorial.png"/></button>
+<button aria-label="Open blocked route image" data-caption="A crystal barrier signals that the player must switch to Dude and use the projectile." data-lightbox-src="assets/images/swap-monsters/blocked-route.png"><img alt="Swap Monsters route blocked by a crystal formation" loading="lazy" src="assets/images/swap-monsters/blocked-route.png"/></button>
+</div>
+</section>
+
+<section class="section">
+<p class="section-label">Technical Evidence</p>
+<h2>Organizing movement, swapping, and interactions.</h2>
+<div class="technical-grid">
+<article><img alt="GDScript showing the physics process and character state switching" loading="lazy" src="assets/images/swap-monsters/movement-code.png"/><div><p class="tag">State and Movement</p><h3>Character Controller</h3><p>The controller routes movement through the active character state, applies shared physics, manages the switching meter, and hides ability-specific visuals when they are not active.</p></div></article>
+<article><img alt="GDScript showing how Dude's arrow is instantiated and aimed" loading="lazy" src="assets/images/swap-monsters/arrow-code.png"/><div><p class="tag">Ability System</p><h3>Spawning the Arrow</h3><p>Dude's ability instantiates a projectile, sets its direction from the player's facing direction, adds it to the scene, and positions it at the arrow marker.</p></div></article>
+<article class="system-card"><p class="tag">Resource System</p><h3>Four-stage Switching Meter</h3><p>Each character swap costs one stage. The meter regenerates while the player is grounded, and breakable green crystals restore a stage. That turns switching from a free menu choice into a limited resource.</p><div class="pill-row"><span>State Machine</span><span>Timers</span><span>Collisions</span><span>Projectiles</span><span>Signals</span></div></article>
+</div>
+</section>
+
+<section class="section">
+<p class="section-label">Debugging</p>
+<h2>Thirty minutes. One line.</h2>
+<p class="wide">The bow kept spawning arrows incorrectly. It took about 30 minutes to trace the problem to one line of code. Finding it took much longer than fixing it, but it reinforced why keeping the controller and ability states organized mattered.</p>
+</section>
+
+<section class="section">
+<div class="recognition-card">
+<div><p class="section-label">Instructor Recognition</p><h2>Best Unique Character Abilities</h2><p>My Urban Arts instructor selected the project for “Best Unique Character Abilities” and nominated me for the RIT Alumni Award based on my progress during the course.</p></div>
+<div><p class="section-label">Looking Back</p><blockquote>“I'm probably proudest of how organized the code is and how smooth the swaps and abilities feel.”</blockquote><p>With more time, I would test the level with players who had never seen it before and use their feedback to improve navigation, balance, and edge cases.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="contact-card"><p class="section-label">Attribution</p><h2>What I built and what I started with.</h2><p>Built in Godot using the Endless Access Moddable Platformer starter framework. I replaced and customized the player systems, programmed the three-character switching and abilities, created the switching-meter and breakable-object mechanics, and designed the cave's route and progression. Visual and audio assets came from credited third-party sources, including CraftPix, itch.io asset creators, Endless Access Studio, and Pixabay.</p><div class="actions"><a class="btn primary" href="https://spaceninja910.itch.io/swap-monsters" rel="noopener" target="_blank">Play Swap Monsters</a><a class="btn" href="projects.html">Back to Work</a></div></div>
+</section>
+</main>
+<footer><div><strong>Charlie Barra</strong><p>Curious about systems. Passionate about building better ones.</p></div><div class="footer-links"><a href="story.html">Story</a><a href="projects.html">Work</a><a href="pokemon.html">Competitive Play</a><a href="notebook.html">Field Notes</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

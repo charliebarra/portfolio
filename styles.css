@@ -327,6 +327,19 @@ p{line-height:1.72}
 .video-frame{margin-top:30px}
 .video-frame iframe,.media-embed iframe{width:100%;aspect-ratio:16/9;border:0;display:block}
 .media-list{display:grid;gap:38px;margin-top:36px}
+.programming-highlight{
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);
+  gap:30px;
+  align-items:center;
+  padding:26px;
+  border:1px solid var(--line);
+  border-radius:28px;
+  background:var(--panel);
+  box-shadow:var(--shadow);
+}
+.programming-highlight img{width:100%;height:350px;display:block;object-fit:cover;border-radius:20px}
+.programming-highlight p:not(.section-label){color:var(--muted)}
 .media-project:nth-child(even) .media-embed{order:2}
 .media-copy p:not(.tag){color:var(--muted)}
 .pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
@@ -338,6 +351,56 @@ p{line-height:1.72}
   font-size:.86rem;
   font-weight:800;
 }
+
+/* Swap Monsters case study */
+.swap-snapshot{grid-template-columns:repeat(3,minmax(0,1fr))}
+.player-loop{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:12px;
+  margin-top:32px;
+}
+.player-loop span{
+  padding:13px 16px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--panel);
+  font-weight:850;
+}
+.player-loop b{color:var(--green);font-size:1.2rem}
+.ability-grid,.technical-grid,.recognition-card{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+  margin-top:34px;
+}
+.ability-grid article,.technical-grid article,.recognition-card>div{
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:var(--panel);
+  box-shadow:var(--shadow);
+}
+.ability-grid img{width:100%;aspect-ratio:16/9;display:block;object-fit:cover}
+.ability-grid article>div,.technical-grid article>div,.technical-grid .system-card,.recognition-card>div{padding:24px}
+.ability-grid h3,.technical-grid h3{margin:0 0 10px}
+.ability-grid p,.technical-grid p,.recognition-card p{color:var(--muted)}
+.swap-process{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:14px;
+  margin-top:34px;
+}
+.swap-process article{padding:20px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+.swap-process strong{font-size:1.7rem;color:var(--blue)}
+.swap-process span{display:block;font-weight:900;margin:8px 0}
+.swap-process p{margin-bottom:0;color:var(--muted);font-size:.9rem}
+.swap-gallery img{object-position:center}
+.technical-grid img{width:100%;height:280px;display:block;object-fit:contain;background:#171717}
+.technical-grid .system-card{display:flex;flex-direction:column;justify-content:center}
+.recognition-card{grid-template-columns:repeat(2,minmax(0,1fr))}
+.recognition-card blockquote{margin:16px 0;padding-left:18px;border-left:3px solid var(--orange);font-family:"Space Grotesk",sans-serif;font-size:1.2rem;font-weight:700;line-height:1.5}
 
 /* Pokémon */
 .achievement-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
@@ -441,7 +504,7 @@ footer p{margin:.4rem 0 0}
 @media(max-width:900px){
   .nav{align-items:flex-start}
   .nav nav{justify-content:flex-end}
-  .hero,.story-hero,.case-hero,.chapter-grid,.large-project-card,.media-project{grid-template-columns:1fr}
+  .hero,.story-hero,.case-hero,.chapter-grid,.large-project-card,.media-project,.programming-highlight{grid-template-columns:1fr}
   .chapter-grid.reverse .chapter-copy,.media-project:nth-child(even) .media-embed{order:initial}
   .hero-media img,.story-hero>img,.case-hero>img,.chapter-image img{height:auto;max-height:620px}
   .principle-grid,.feature-grid,.note-grid{grid-template-columns:1fr}
@@ -450,6 +513,9 @@ footer p{margin:.4rem 0 0}
   .snapshot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .gallery-grid.four{grid-template-columns:repeat(2,minmax(0,1fr))}
   .tournament-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ability-grid,.technical-grid{grid-template-columns:1fr}
+  .swap-process{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .recognition-card{grid-template-columns:1fr}
 }
 @media(max-width:650px){
   .nav{
@@ -490,6 +556,9 @@ footer p{margin:.4rem 0 0}
   .certification-card img,.resume-certification img{width:76px}
   .certification-card h2,.resume-certification h2{font-size:1.35rem}
   .snapshot-grid,.process-strip,.gallery-grid,.gallery-grid.four,.card-sheet-grid,.achievement-grid,.tournament-gallery{grid-template-columns:1fr}
+  .swap-snapshot,.swap-process{grid-template-columns:1fr}
+  .player-loop{align-items:stretch;flex-direction:column}
+  .player-loop b{transform:rotate(90deg);align-self:center}
   .large-project-card,.media-project{padding:18px}
   .gallery-grid img,.card-sheet-grid img,.tournament-card img{height:auto;max-height:430px}
   .contact-link,footer{flex-direction:column;align-items:flex-start}
