@@ -148,6 +148,26 @@ p{line-height:1.72}
   box-shadow:var(--shadow);
 }
 .principle-grid span{color:var(--blue);font-weight:900}
+.certification-card{
+  display:grid;
+  grid-template-columns:140px minmax(0,1fr);
+  gap:30px;
+  align-items:center;
+  padding:28px;
+  border:1px solid var(--line);
+  border-radius:var(--radius-md);
+  background:var(--panel);
+  box-shadow:var(--shadow);
+}
+.certification-badge img{width:140px;display:block}
+.certification-card h2,.resume-certification h2{font-size:clamp(1.5rem,2.7vw,2.35rem);letter-spacing:-.035em;margin-bottom:10px}
+.certification-card p{max-width:760px;color:var(--muted)}
+.certification-card .certification-meta{margin:0;color:var(--blue);font-weight:850}
+.text-link{display:inline-block;color:var(--green);font-weight:850;margin-top:4px}
+.text-link:hover{text-decoration:underline;text-underline-offset:4px}
+.resume-certification{display:grid;grid-template-columns:96px minmax(0,1fr);gap:20px;align-items:center}
+.resume-certification img{width:96px;display:block}
+.resume-certification p{color:var(--muted)}
 .feature-card{
   overflow:hidden;
   border:1px solid var(--line);
@@ -465,6 +485,10 @@ footer p{margin:.4rem 0 0}
   .hero{padding:38px 0 64px;min-height:auto}
   h1{font-size:clamp(2.7rem,15vw,4.2rem)}
   h2{font-size:clamp(2rem,10vw,3.1rem)}
+  .certification-card,.resume-certification{grid-template-columns:76px minmax(0,1fr);gap:16px;align-items:start}
+  .certification-card{padding:20px}
+  .certification-card img,.resume-certification img{width:76px}
+  .certification-card h2,.resume-certification h2{font-size:1.35rem}
   .snapshot-grid,.process-strip,.gallery-grid,.gallery-grid.four,.card-sheet-grid,.achievement-grid,.tournament-gallery{grid-template-columns:1fr}
   .large-project-card,.media-project{padding:18px}
   .gallery-grid img,.card-sheet-grid img,.tournament-card img{height:auto;max-height:430px}
