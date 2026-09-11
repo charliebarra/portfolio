@@ -84,6 +84,8 @@ Swap Monsters is a published Godot platformer created independently during a two
 
 [Play Swap Monsters on itch.io](https://spaceninja910.itch.io/swap-monsters)
 
+[Watch the Swap Monsters walkthrough](https://youtu.be/zS3NLN07p0Y)
+
 ## Technology
 
 The site intentionally uses a simple stack:
