@@ -86,6 +86,8 @@ Swap Monsters is a published Godot platformer created independently over seven w
 
 [Watch the Swap Monsters walkthrough](https://youtu.be/zS3NLN07p0Y)
 
+[View the Swap Monsters repository](https://github.com/charliebarra/swap-monsters)
+
 ## Technology
 
 The site intentionally uses a simple stack:
@@ -226,6 +228,7 @@ That makes the site more useful than a list of finished assignments.
 - [Blackjack Program Repository](https://github.com/charliebarra/blackjack-program)
 - [Restaurant Ordering Game Repository](https://github.com/charliebarra/restaurant-ordering-game)
 - [Multiplayer Board Game Repository](https://github.com/charliebarra/multiplayer-board-game)
+- [Swap Monsters Repository](https://github.com/charliebarra/swap-monsters)
 - [YouTube Channel](https://www.youtube.com/@charlie-barra)
 
 ---
