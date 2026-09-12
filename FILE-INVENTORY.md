@@ -32,8 +32,8 @@
 
 ## Documents
 
-- `documents/Charlie-Barra-Resume.pdf` — active résumé link
-- `documents/Charlie_Barra_Resume.pdf` — retained duplicate/legacy filename
+- `documents/Charlie-Barra-Resume.pdf` — retained document; no longer linked from the website
+- `documents/Charlie_Barra_Resume.pdf` — retained duplicate/legacy filename; no longer linked from the website
 
 ## Site configuration and icons
 

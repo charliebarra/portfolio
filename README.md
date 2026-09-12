@@ -51,7 +51,7 @@ Short observations about games, balance, players, interfaces, prototypes, and qu
 
 ### Resume and Contact
 
-A downloadable résumé and links to GitHub, YouTube, and the rest of the portfolio.
+An online résumé overview and links to GitHub, YouTube, and the rest of the portfolio.
 
 ## Featured Case Study
 
@@ -122,7 +122,6 @@ portfolio/
 ├── assets/
 │   └── images/                 # Optimized site images
 ├── documents/
-│   └── Charlie-Barra-Resume.pdf
 ├── favicon.ico
 ├── site.webmanifest
 └── README.md

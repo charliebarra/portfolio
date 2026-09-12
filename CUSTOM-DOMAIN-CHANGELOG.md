@@ -36,4 +36,4 @@ GitHub Pages deployment source: `charliebarra/portfolio`
 - Internal navigation remains relative so it works on both the custom domain and the underlying GitHub Pages deployment.
 - GitHub profile and repository links still point to `github.com/charliebarra`.
 - YouTube embeds and channel links are unchanged.
-- The résumé remains linked from `documents/Charlie-Barra-Resume.pdf`.
+- The résumé PDF is no longer linked from the website.
