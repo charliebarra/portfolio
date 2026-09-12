@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>A hand-coded portfolio for my game design, programming, competitive Pokémon, and interactive world-design work.</strong>
+  <strong>A collaborative portfolio presenting my game design, programming, competitive Pokémon, and interactive world-design work.</strong>
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@ I wanted one place where someone could see both **what I built** and **how I got
 
 The site started as a way to organize projects for college applications, but it became a record of the questions behind them. Most of the work follows the same pattern: I notice something, wonder why it works that way, build something to test it, and usually end up with another question.
 
-I built the site by hand instead of using a template because I wanted control over the layout, navigation, project pages, and the way everything connects.
+I supplied the original projects, source materials, factual details, reflections, and final review. The website's structure, editorial refinement, code implementation, accessibility work, and quality assurance were developed with assistance from OpenAI's ChatGPT.
 
 ## What Is in the Portfolio
 
@@ -78,7 +78,7 @@ It includes:
 
 ### Swap Monsters
 
-Swap Monsters is a published Godot platformer created independently during a two-week Urban Arts course. Its case study documents the three-character ability system, switching resource, cave routing, seven-day development process, technical evidence, debugging, and third-party asset attribution.
+Swap Monsters is a published Godot platformer created independently over seven working days during a two-week, 30-hour Urban Arts course. Starting from the supplied Endless Access Moddable Platformer framework, I developed a new cave game with three character abilities, a limited switching meter, breakable-object interactions, and an original route and progression.
 
 [Read the Swap Monsters case study](https://www.charliebarra.com/swap-monsters.html)
 
@@ -217,28 +217,24 @@ A strong project page should answer:
 
 That makes the site more useful than a list of finished assignments.
 
-## Current Priorities
-
-- Organize the four Python projects into their own GitHub repositories
-- Add source-code links and visual READMEs
-- Keep documenting playtesting and design changes
-- Finish the TCG matchup simulator
-- Add new Field Notes when I notice something worth keeping
-
 ## Related Links
 
 - [Live Portfolio](https://www.charliebarra.com/)
 - [GitHub Profile](https://github.com/charliebarra)
 - [Meteor Mayhem Repository](https://github.com/charliebarra/meteor-mayhem)
+- [Adventure Game Repository](https://github.com/charliebarra/adventure-game)
+- [Blackjack Program Repository](https://github.com/charliebarra/blackjack-program)
+- [Restaurant Ordering Game Repository](https://github.com/charliebarra/restaurant-ordering-game)
+- [Multiplayer Board Game Repository](https://github.com/charliebarra/multiplayer-board-game)
 - [YouTube Channel](https://www.youtube.com/@charlie-barra)
 
 ---
 
-This repository is the technical side of the portfolio. The website tells the story; the files here show how I built and organized it.
+This repository contains the technical implementation of the portfolio. The website tells the story; the files show how the collaboratively developed site is organized.
 
 ## Site Credits and AI Use
 
-This portfolio was developed collaboratively. OpenAI’s ChatGPT supported editorial refinement, content organization, design thinking, accessibility review, quality assurance, and presentation.
+Charlie supplied the original projects, source materials, factual details, reflections, and final review. The website's information architecture, editorial refinement, HTML, CSS, JavaScript implementation, accessibility work, and quality assurance were developed with assistance from OpenAI's ChatGPT. Charlie did not personally code the website.
 
 My programming projects, game designs, project decisions, reflections, competitive accomplishments, and underlying work are my own unless a page says otherwise. AI helped me organize and present the work; it did not create the original projects or accomplishments.
 
