@@ -80,6 +80,12 @@ button{color:inherit}
   border-bottom:3px solid transparent;
 }
 .nav nav a:hover,.nav nav a[aria-current="page"]{color:var(--text);border-color:var(--green)}
+.breadcrumb{display:flex;align-items:center;gap:9px;margin:0 0 16px;color:var(--muted);font-size:.88rem}
+.breadcrumb a{color:var(--blue);text-decoration:none}
+.breadcrumb a:hover{text-decoration:underline}
+.reference-card{max-width:505px;margin:34px 0 0}
+.reference-card img{display:block;width:100%;height:auto;border-radius:20px;border:1px solid var(--line);background:var(--panel)}
+.reference-card figcaption{margin-top:12px;color:var(--muted);font-size:.94rem;line-height:1.55}
 
 main{min-height:70vh}
 .section,.hero,.page-hero,.story-hero,.story-prologue,.story-chapter,.case-hero{
@@ -567,7 +573,7 @@ footer p{margin:.4rem 0 0}
   .section{padding:58px 0}
   .page-hero{padding:44px 0 62px}
   .hero{padding:38px 0 64px;min-height:auto}
-  h1{font-size:clamp(2.7rem,15vw,4.2rem)}
+  h1{font-size:clamp(2.35rem,13vw,3.7rem)}
   h2{font-size:clamp(2rem,10vw,3.1rem)}
   .certification-card,.resume-certification{grid-template-columns:76px minmax(0,1fr);gap:16px;align-items:start}
   .certification-card{padding:20px}

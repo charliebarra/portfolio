@@ -1,5 +1,16 @@
 
 document.addEventListener("DOMContentLoaded", () => {
+  const siteCredits = document.querySelector("#site-credits details");
+  if (siteCredits && window.location.hash === "#site-credits") {
+    siteCredits.open = true;
+  }
+
+  window.addEventListener("hashchange", () => {
+    if (siteCredits && window.location.hash === "#site-credits") {
+      siteCredits.open = true;
+    }
+  });
+
   const footerLinks = document.querySelector(".footer-links");
   if (footerLinks && !footerLinks.querySelector("[data-site-credits-link]")) {
     const creditsLink = document.createElement("a");
